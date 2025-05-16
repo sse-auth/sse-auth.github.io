@@ -1,0 +1,20 @@
+.ais-SearchBox {
+  &-input {
+    @apply search-cancel:appearance-none flex h-8 w-full max-w-full shrink-0 grow cursor-pointer items-center rounded pr-[60px] pb-px pl-[30px];
+    @apply border-gray-new-90 border bg-white bg-[url('/images/icons/search-light.svg')] bg-[left_10px_center] bg-no-repeat outline-none;
+    @apply tracking-extra-tight text-left text-sm leading-none;
+    @apply hover:border-gray-new-70 focus:border-gray-new-70 transition-colors duration-200 hover:shadow-none;
+    @apply dark:border-gray-new-20 dark:bg-black-new dark:bg-[url('/images/icons/search-dark.svg')];
+    @apply dark:hover:border-gray-new-30 dark:focus:border-gray-new-30;
+    @apply md:pr-6 md:text-base;
+  }
+
+  &-reset {
+    @apply absolute top-1/2 right-12 z-10 -translate-y-1/2 md:right-3 dark:fill-white;
+  }
+
+  &-submit,
+  &-loadingIndicator {
+    @apply hidden;
+  }
+}
